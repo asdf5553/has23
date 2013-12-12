@@ -1,6 +1,20 @@
-*.class
-
-# Package Files #
-*.jar
-*.war
-*.ear
+public boolean has23(int[] nums) {
+  Boolean[] arr= new Boolean[nums.length];
+  for (int x=0; x<nums.length; x++)
+  {
+   if(nums[x]==2)
+   {
+   arr[x]= true;
+   }
+   else{
+     if(nums[x]==3)
+      {
+      arr[x]= true;
+      }
+     else{
+      arr[x]= false;
+      }
+   }
+  }
+  return (arr[0]||arr[1]);
+}
